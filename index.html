@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shabeer's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 4px solid #0056b3;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .skill, .project {
+            width: 30%;
+            min-width: 250px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .skills .skill, .projects .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .skills .skill, .projects .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shabeer's Portfolio</h1>
+        <p>Android Developer | Tech Enthusiast</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hello, I'm Shabeer! I'm an Android Developer with experience in building high-performance mobile applications using Kotlin, Jetpack Compose, and modern Android development practices. I am passionate about coding and always eager to learn new technologies to enhance my skill set.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <div class="card">
+                <h3>Android Development</h3>
+                <p>Expert in building high-performance Android applications with a deep understanding of modern development practices.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Kotlin</h3>
+                <p>Advanced knowledge of Kotlin, including Coroutines, and its usage in building responsive, asynchronous Android apps.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Jetpack Compose</h3>
+                <p>Building modern UIs with Jetpack Compose for a more efficient and declarative UI development process.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Android Studio</h3>
+                <p>Skilled in using Android Studio as the primary IDE for Android development, utilizing its debugging tools, profilers, and performance monitoring tools.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>MVVM Architecture</h3>
+                <p>Expertise in using the MVVM architecture pattern for clear separation of concerns, maintainable code, and scalable apps.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Dagger Hilt</h3>
+                <p>Implementing Dependency Injection with Dagger Hilt for efficient and modular dependency management across the app.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Room Database</h3>
+                <p>Proficient in using Room for local database storage and efficient data management within the app.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Retrofit</h3>
+                <p>Experience using Retrofit for network operations, API integration, and efficient data parsing with JSON.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Firebase</h3>
+                <p>Implementing Firebase for real-time data storage, authentication, push notifications, and analytics.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Google Play Billing</h3>
+                <p>Integrating in-app purchases and subscriptions using the Google Play Billing Library.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Location Services</h3>
+                <p>Utilizing location services and APIs to access GPS data and display maps within Android applications.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Push Notifications (OneSignal, Firebase Cloud Messaging)</h3>
+                <p>Implementing push notifications for user engagement and timely updates.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Jetpack Libraries</h3>
+                <p>Using Jetpack libraries such as LiveData, ViewModel, Navigation, WorkManager, and Paging for building scalable and reliable apps.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Material Design</h3>
+                <p>Following Android’s Material Design guidelines for building aesthetically pleasing and user-friendly interfaces.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Unit Testing & UI Testing</h3>
+                <p>Writing unit and UI tests with tools like JUnit, Espresso, and Mockito for ensuring code quality and reliability.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Git & GitHub</h3>
+                <p>Proficient in version control with Git and using GitHub for collaborative development and project management.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>Java (Basic Knowledge)</h3>
+                <p>Familiar with the basics of Java programming language. Experience in writing simple Java programs, object-oriented concepts, and working with Java in Android development.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>PHP (Basic Knowledge)</h3>
+                <p>Basic understanding of PHP for server-side scripting. Familiar with using PHP to connect to databases, handle form data, and build dynamic web pages.</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="card">
+                <h3>MySQL (Basic Knowledge)</h3>
+                <p>Basic understanding of MySQL for database management. Able to write simple SQL queries for CRUD operations and database design.</p>
+            </div>
+        </div>
+</section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+    <div class="card">
+        <h3>Telugu Quran</h3>
+        <p>A mobile app designed to show prayer timings, store Quran PDF files, and send notifications using Firebase and OneSignal.</p>
+        <ul>
+            <li><strong>MVVM Architecture</strong>: The app follows the Model-View-ViewModel (MVVM) design pattern for better separation of concerns and testability. This ensures a clean codebase and maintainable structure.</li>
+            <li><strong>Dagger Hilt</strong>: Dependency injection is implemented using Dagger Hilt to manage dependencies across the app and make it more modular and scalable.</li>
+            <li><strong>MySQL Database</strong>: The app uses a MySQL database to store Quranic data, including verses in PDF format, which can be easily fetched and displayed within the app.</li>
+            <li><strong>PDF Viewer</strong>: The app integrates a third-party PDF viewer to display Quranic content in PDF format, providing a smooth reading experience to users.</li>
+            <li><strong>Firebase Notifications</strong>: Firebase Cloud Messaging (FCM) is used to send timely prayer notifications based on the user's location, helping them stay on track with prayer timings.</li>
+            <li><strong>OneSignal Integration</strong>: OneSignal is used for push notifications, enabling real-time updates and reminders for prayer times, events, and other relevant content.</li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=com.shabeer.al_qurantelugu" target="_blank">View on Play Store</a>
+    </div>
+</div>
+
+        <div class="project">
+    <div class="card">
+        <h3>Notes App with Room DB</h3>
+        <p>A mobile app designed to store and manage notes locally using Room Database, allowing users to create, update, and delete notes seamlessly. It also includes an intuitive UI built with Jetpack Compose.</p>
+        <ul>
+            <li><strong>Room Database</strong>: The app uses Room DB to store notes locally in a structured way. This ensures fast and efficient data access, with a user-friendly interface for managing notes.</li>
+            <li><strong>Jetpack Compose</strong>: The app is built using Jetpack Compose, making the UI development fast and declarative. This allows for a modern, responsive, and scalable user interface.</li>
+            <li><strong>CRUD Operations</strong>: Users can create, read, update, and delete notes. The app features a simple and intuitive interface to manage notes effectively.</li>
+            <li><strong>MVVM Architecture</strong>: The app follows the MVVM design pattern to separate business logic from UI components. This provides a clean and maintainable code structure, improving app scalability.</li>
+            <li><strong>LiveData</strong>: LiveData is used for observing changes in the note data, allowing the UI to be automatically updated when data is modified, providing a real-time experience.</li>
+            <li><strong>ViewModel</strong>: ViewModel is used to manage UI-related data in a lifecycle-conscious way, ensuring data consistency across configuration changes (like screen rotation).</li>
+            <li><strong>Material Design</strong>: The app uses Material Design components for a modern and aesthetically pleasing user interface, providing a consistent experience across Android devices.</li>
+        </ul>
+        <a href="https://github.com/shabeer-mobiledev/Notes-With-Room-DB" target="_blank">View on GitHub</a>
+    </div>
+</div>
+
+        <div class="project">
+    <div class="card">
+        <h3>Recipe App</h3>
+        <p>A mobile app that allows users to search and view recipes. It leverages Retrofit to fetch data from external APIs, Firebase for storing user data, Jetpack Compose for building a modern and responsive UI, and Dagger Hilt for Dependency Injection to manage app components efficiently.</p>
+        <ul>
+            <li><strong>Retrofit</strong>: Used for making network requests to external recipe APIs. Retrofit simplifies the process of converting JSON data into Kotlin objects, making API communication seamless and efficient.</li>
+            <li><strong>Firebase</strong>: Firebase is used for user authentication, data storage, and syncing saved recipes in real-time, allowing users to access their saved recipes from any device.</li>
+            <li><strong>Jetpack Compose</strong>: The UI is built using Jetpack Compose, allowing for a declarative, modern, and efficient UI design with minimal boilerplate code.</li>
+            <li><strong>MVVM Architecture</strong>: The app follows the MVVM (Model-View-ViewModel) pattern, ensuring a clean separation of concerns and making the app more maintainable and testable.</li>
+            <li><strong>LiveData & ViewModel</strong>: LiveData is used to observe changes in the data, and the ViewModel manages UI-related data in a lifecycle-conscious manner, ensuring consistency across configuration changes.</li>
+            <li><strong>Dependency Injection (Dagger Hilt)</strong>: Dagger Hilt is used for Dependency Injection, making it easier to manage app components, promoting loose coupling, and improving code modularity. It simplifies the injection of dependencies into various parts of the app, such as Retrofit and Firebase services.</li>
+            <li><strong>Material Design</strong>: Implements Material Design components for a user-friendly and visually appealing interface that provides a consistent user experience across Android devices.</li>
+        </ul>
+        <a href="https://github.com/shabeer-mobiledev/RecipeApp" target="_blank">View on GitHub</a>
+    </div>
+</div>
+
+    </section>
+    <footer>
+    <p>Designed & Developed by <strong>Shabeer</strong>. Connect with me on 
+        <a href="https://www.linkedin.com/in/shabeer-mobiledev/" target="_blank">LinkedIn</a>
+    </p>
+    <p>Contact: <a href="mailto:shabeer.mobiledev25@gmail.com">shabeer.mobiledev25@gmail.com</a> | WhatsApp: <a href="https://wa.me/+917995153536" target="_blank">+91 79951 53536</a></p>
+</footer>
+
+</body>
+</html>
